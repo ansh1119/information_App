@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pattern">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/pattern"
+        tools:context=".TopicList">
+
+        <!--    card number 1-->
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card1"
+            app:strokeColor="#FFD658"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="100dp"
+            app:cardMaxElevation="100dp"
+            android:backgroundTint="@color/black"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline2"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/and"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/android"
+                android:backgroundTint="@android:color/transparent"/>
+<!--                android:background="@drawable/background"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:text="Android \nDev"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="@android:color/transparent"
+                android:textSize="30dp"/>
+<!--                android:background="@drawable/background"/>-->
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--    card number 2-->
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card2"
+            android:layout_width="180dp"
+            app:strokeColor="#FEE000"
+            app:cardMaxElevation="12dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="100dp"
+            app:cardCornerRadius="20dp"
+            android:backgroundTint="@color/black"
+            app:cardElevation="30dp"
+            app:layout_constraintLeft_toRightOf="@id/guideline2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/webd"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/coding"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:padding="5dp"
+                android:text="Web \nDev"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <!--    card number 3-->
+
+        <com.google.android.material.card.MaterialCardView
+            app:strokeColor="#FEE000"
+            android:id="@+id/card3"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/black"
+            app:cardCornerRadius="20dp"
+            app:cardMaxElevation="12dp"
+            app:cardElevation="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@id/card1">
+
+
+            <ImageView
+                android:id="@+id/ML"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/brain" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:padding="5dp"
+                android:text="Machine \nLearning"
+                android:textColor="#FFFFFF"
+
+                android:textSize="30dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--    card 4-->
+
+        <com.google.android.material.card.MaterialCardView
+            app:strokeColor="#FEE000"
+            android:id="@+id/card4"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/black"
+            app:cardMaxElevation="12dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintLeft_toRightOf="@id/guideline2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card2">
+
+
+            <ImageView
+                android:id="@+id/AR"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/augmented" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:padding="5dp"
+                android:text="Augmented \nReality"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--    card 5-->
+
+        <com.google.android.material.card.MaterialCardView
+            app:strokeColor="#FEE000"
+            android:id="@+id/card5"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="50dp"
+            app:cardMaxElevation="12dp"
+            android:backgroundTint="@color/black"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@id/card3">
+
+
+            <ImageView
+                android:id="@+id/IOT"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/internet" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:padding="5dp"
+                android:text="Internet of\nThings"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <!--    card 6-->
+
+        <com.google.android.material.card.MaterialCardView
+            app:strokeColor="#FEE000"
+            android:id="@+id/card6"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="@color/black"
+            app:cardMaxElevation="12dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintLeft_toRightOf="@id/guideline2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card4">
+
+            <ImageView
+                android:id="@+id/anyOther"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/others" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:padding="5dp"
+                android:text="Any Other\nTechnology"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+<!--        call button-->
+
+        <com.google.android.material.card.MaterialCardView
+            app:strokeColor="#ffffff"
+            android:id="@+id/callbtn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline3"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="#FEE000"
+            app:cardCornerRadius="20dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call us"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/call"
+                android:paddingRight="150dp"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="690dp" />
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/circle_button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/backarr"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
