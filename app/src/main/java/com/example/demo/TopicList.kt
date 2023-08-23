@@ -18,7 +18,9 @@ class TopicList : AppCompatActivity() {
         val ML=findViewById<CardView>(R.id.card3)
         val AR=findViewById<CardView>(R.id.card4)
         val IOT=findViewById<CardView>(R.id.card5)
-        val other=findViewById<CardView>(R.id.card6)
+        val AI=findViewById<CardView>(R.id.card6)
+        val DS=findViewById<CardView>(R.id.card7)
+        val other=findViewById<CardView>(R.id.card8)
         val backBtn=findViewById<ImageButton>(R.id.back)
         val call=findViewById<CardView>(R.id.callbtn)
 
@@ -77,6 +79,20 @@ class TopicList : AppCompatActivity() {
 //working of others card
         other.setOnClickListener{
             intent=Intent(applicationContext,topicForm::class.java)
+            startActivity(intent)
+        }
+
+        AI.setOnClickListener{
+            toastMsg("Opening Learner's Guide")
+            intent=Intent(Intent.ACTION_VIEW)
+            intent.setData(Uri.parse("https://cloud.google.com/vertex-ai/docs/generative-ai/learn/overview"))
+            startActivity(intent)
+        }
+
+        DS.setOnClickListener{
+            toastMsg("Opening Learner's Guide")
+            intent=Intent(Intent.ACTION_VIEW)
+            intent.setData(Uri.parse("https://python-data-science.readthedocs.io/en/latest/"))
             startActivity(intent)
         }
 
