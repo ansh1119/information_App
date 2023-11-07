@@ -23,6 +23,7 @@ class TopicList : AppCompatActivity() {
         val other=findViewById<CardView>(R.id.card8)
         val backBtn=findViewById<ImageButton>(R.id.back)
         val call=findViewById<CardView>(R.id.callbtn)
+        val CP=findViewById<CardView>(R.id.cardCP)
 
 
       backBtn.setOnClickListener{
@@ -94,6 +95,13 @@ class TopicList : AppCompatActivity() {
             intent=Intent(Intent.ACTION_VIEW)
             intent.setData(Uri.parse("https://python-data-science.readthedocs.io/en/latest/"))
             startActivity(intent)
+        }
+
+
+        CP.setOnClickListener{
+            val intent=Intent(applicationContext,SheetList::class.java)
+            startActivity(intent)
+            toastMsg("Opening Guide")
         }
 
     }

@@ -393,6 +393,46 @@
 
         </com.google.android.material.card.MaterialCardView>
 
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardCP"
+            app:strokeColor="#FFD658"
+            android:layout_width="180dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="60dp"
+            app:cardMaxElevation="100dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="#7D8ACA"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="30dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/guideline2"
+            app:layout_constraintTop_toBottomOf="@id/card7">
+
+            <ImageView
+                android:id="@+id/CP"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-20dp"
+                android:src="@drawable/hackathon"
+                android:background="@android:color/transparent"/>
+            <!--                android:background="@drawable/background"/>-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="CP/ \nDSA"
+                android:layout_marginRight="100px"
+                android:textColor="#000000"
+                android:background="@android:color/transparent"
+                android:textSize="30dp"/>
+            <!--                android:background="@drawable/background"/>-->
+
+        </com.google.android.material.card.MaterialCardView>
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

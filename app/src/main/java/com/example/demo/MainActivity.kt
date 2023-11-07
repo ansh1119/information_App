@@ -7,7 +7,7 @@ import android.os.Handler
 import android.view.WindowManager
 
 
-@Suppress("DEPRECATION")
+//@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
